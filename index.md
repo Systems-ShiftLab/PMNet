@@ -27,7 +27,7 @@ PMNet implementation consists of 2 main parts: PMNet hardware and PMNet software
 
 ## PMNet Hardware
 There are 2 main parts of PMNet hardware implementation.
-1. Datapath in FPGA (Soon available)
+1. Datapath in FPGA (available at [PMNet_release/PMNet_Vivado/](PMNet_release/PMNet_Vivado/))
 2. Packet processing (available at [PMNet_release/PMNet_P4/](PMNet_release/PMNet_P4/))
 
 ## PMNet Software

@@ -9,6 +9,12 @@ control PMSwitchCacheResponseGenerator(inout headers hdr,
         ctrl.hashedAddress  = hdr.pmswitchhds.PMAddress;
         ctrl.ackCount       = hdr.pmswitchhds.ackCount;
         */
+        // Korakit  ////////////////
+        // There is a bug here.
+        // The cache response should use cache read request's src address as the destination, not the original update request's src address.
+        // Although this works fine in single client setup.
+        ////////////////////////////
+
         // Swap src and dst of ethernet MAC and IPv4
         IPv4Address sourceAddr = hdr.ipv4.src;
         hdr.ipv4.src = hdr.ipv4.dst;

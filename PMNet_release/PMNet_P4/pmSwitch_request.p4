@@ -1,11 +1,18 @@
 #include "xilinx_custom.p4"
 #include "common_request.p4"
 
+
+// Korakit ///////////
+// For this implementation, we use sequence number to index the PM instead of real hashed address to avoid implementing log state checking in the slow softcore.
+// Using sequence number allows PMNet to log the request without checking if that address contains non-ACKed log.
+// The read caching part will use real hashedAddress to index the PM.
+// This should maintain correctness without the performance impact of using a softcore in write (update log) path.
+//////////////////////
 control PMSwitchRequestProcessing(inout headers hdr,
                   inout PMswitch_metadata_t ctrl) {
     action AccessMemory() {
         ctrl.PMSwitchOPS    = hdr.pmswitchhds.type;
-        ctrl.hashedAddress  = hdr.pmswitchhds.PMAddress;
+        ctrl.hashedAddress  = ((hdr.pmswitchhds.seq_no*2048)%0x80000000)+0x80000000;
         ctrl.ackCount       = hdr.pmswitchhds.ackCount;
     }
     action bypass() {
