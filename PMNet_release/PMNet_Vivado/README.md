@@ -10,17 +10,17 @@ Main PMNet hardware implementation
 ## Build Instruction
 
 ### Using a prebuilt bitstream
-There is a prebuilt bitstream for VCU118 evaluation platform in the tarball.
+There is a prebuilt bitstream for VCU118 evaluation platform in the tarball.        
 To use prebuilt bitstream open the vivado project "10g_baseR_dual.xpr", open hardware manager and program the bitstream.
 
 ### Regenerating a bitstream
 Open the vivado project "10g_baseR_dual.xpr" and generate a bitstream.
 
 ## Running the design
-1. Connecting the FPGA to the network (J96 to the client side, J1 to the server side).
+1. Connecting the FPGA to the network (J96 to the client side, J1 to the server side). 
 2. Program the bitstream to the FPGA
 
-Now, network packets from both sides should be able to passthrough the FPGA.
+Now, network packets from both sides should be able to passthrough the FPGA.        
 The FPGA should also logs incoming PMNet update requests from the client side and sends ACK to respond them.
 
 ### Enabling Recovery and Caching
