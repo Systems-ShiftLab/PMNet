@@ -32,7 +32,7 @@ There are 2 main parts of PMNet hardware implementation.
 
 ## PMNet Software
 ### Workloads
-Workloads used for PMNet evaluation.
+Workloads used for PMNet evaluation.    
 Available Here: [PMNet_release/workloads/](PMNet_release/workloads/)
 ### PMNet library
 PMNet library allows application to interface with PMNet devices.   
