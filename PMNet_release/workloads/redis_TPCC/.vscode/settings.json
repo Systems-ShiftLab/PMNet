@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "chrono": "cpp",
+        "array": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "string": "cpp"
+    }
+}
