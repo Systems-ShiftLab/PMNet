@@ -23,7 +23,7 @@ If you find PMNet useful in your research, please cite:
 </p>
 </details>
 
-PMNet implementation consists of 2 main parts: PMNet hardware and PMNet software library
+PMNet implementation consists of 2 main parts: PMNet hardware and PMNet software
 
 ## PMNet Hardware
 There are 2 main parts of PMNet hardware implementation.
