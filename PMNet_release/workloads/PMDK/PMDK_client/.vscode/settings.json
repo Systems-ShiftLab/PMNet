@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "unordered_set": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "chrono": "cpp",
+        "iosfwd": "cpp"
+    }
+}
