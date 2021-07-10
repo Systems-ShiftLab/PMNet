@@ -9,6 +9,6 @@ Workloads used in PMNet's evaluation
 
 ## Running workloads
 1. Build the server; Redis-based workload are compatible with normal Redis release (tested with Redis-5.0.8 and [Pmem-Redis](https://github.com/pmem/pmem-redis))       
-1.1 For Redis-based workloads, Redis proxy (adaptor) is needed to support PMNet protocol. This is not necessary for Baseline setup that directly connects to the Redis-server with TCP.
+1.1 For Redis-based workloads, Redis proxy (adaptor) is needed to support PMNet protocol, this is not necessary for Baseline setup that directly connects to the Redis-server with TCP; Run Server-adaptor.
 2. Build the client; The Makefile should work.
 3. Run the run script in client folder.

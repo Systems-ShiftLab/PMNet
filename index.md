@@ -23,14 +23,30 @@ If you find PMNet useful in your research, please cite:
 </p>
 </details>
 
+## Testing PMNet
+### Tested Environment
+1. Xilinx VCU118 FPGA
+2. Server Machine: Intel Cascade Lake, 128GiB DRAM, 256GiB DCPMM, Mellanox CX353A NIC, Ubuntu 20.04
+3. Client Machine: Intel Haswell, 128GiB DRAM, Mellanox CX353A NIC, Ubuntu 20.04
+4. 10 Gbit/s ethernet switches as ToR switches
+
+### Tested Topology
+Servers --- ToR switch - FPGA --- ToR switch --- Clients
+
+### Running the test
+1. Build the hardware and program the bitstream ([Hardware](PMNet_release/PMNet_Vivado/))
+2. Build and run the workloads ([Workloads](PMNet_release/workloads/))
+
+
 PMNet implementation consists of 2 main parts: PMNet hardware and PMNet software
 
 ## PMNet Hardware
 There are 2 main parts of PMNet hardware implementation.
-1. Datapath in FPGA (available at [PMNet_release/PMNet_Vivado/](PMNet_release/PMNet_Vivado/))
-2. Packet processing (available at [PMNet_release/PMNet_P4/](PMNet_release/PMNet_P4/))
+1. Packet processing (available at [PMNet_release/PMNet_P4/](PMNet_release/PMNet_P4/))
+2. Datapath in FPGA (available at [PMNet_release/PMNet_Vivado/](PMNet_release/PMNet_Vivado/))
 
 ## PMNet Software
 ### Workloads
 Workloads used for PMNet evaluation.    
 Available Here: [PMNet_release/workloads/](PMNet_release/workloads/)
+
