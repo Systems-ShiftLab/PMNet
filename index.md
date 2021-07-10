@@ -31,7 +31,7 @@ If you find PMNet useful in your research, please cite:
 4. 10 Gbit/s ethernet switches as ToR switches
 
 ### Tested Topology
-Servers --- ToR switch - FPGA --- ToR switch --- Clients
+Servers <---> ToR switch - FPGA <---> ToR switch <---> Clients
 
 ### Running the test
 1. Build the hardware and program the bitstream ([Hardware](PMNet_release/PMNet_Vivado/))
