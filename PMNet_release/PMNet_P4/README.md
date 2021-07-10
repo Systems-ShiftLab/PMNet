@@ -8,3 +8,6 @@ PMNet packet processing manipulates incoming network packets and generates contr
 
 ## Build Instruction
 Run Makefile
+
+### Bugs and limitations
+- P4 module for Cache response generation is buggy: a temporary fix will only respond read requests from the same client that sends the update.
