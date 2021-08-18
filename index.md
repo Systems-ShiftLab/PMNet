@@ -1,9 +1,9 @@
-# PMNet
+# PMNet: In-Network Data Persistence
 
 PMNet is a system that accelerates update requests by logging update requests in network device.
 
 If you find PMNet useful in your research, please cite:
-
+> PMNet: In-Network Data Persistence
 > Korakit Seemakhupt, Sihang Liu, Yasas Senevirathne, Muhammad Shahbaz and Samira Khan  
 > [PMNet: In-Network Data Persistence](https://www.cs.virginia.edu/~smk9u/PMNet_ISCA2021.pdf) 
 > The International Symposium on Computer Architecture (ISCA), 2021
